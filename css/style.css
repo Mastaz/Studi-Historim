@@ -22,6 +22,40 @@ body{
     font-family: var(--typo-text);
 }
 
+/* GENERAL */
+.titreH2Section{
+    padding: 24px 45px;
+    font-family: var(--typo-titre);
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.titreH2Section::before{
+    content: '';
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: var(--color-text-sec);
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+}
+
+.btnAction{
+    color: var(--color-text-pri);
+    background: var(--color-text-ter);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: var(--typo-text);
+    transition: all .2s ease;
+}
+
+.btnAction:hover{
+    color: #fff;
+    background: var(--color-text-sec);
+}
+
 /* NAVBAR */
 .navbarItems{
     display: flex;
@@ -137,24 +171,28 @@ body{
     font-weight: 300;
 }
 
-.btnAssos a{
-    color: var(--color-text-pri);
-    background: var(--color-text-ter);
-    padding: 15px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-family: var(--typo-text);
-    transition: color .2s ease;
+/* Evenements */
+.cardEvenements{
+    transition: all .2s ease;
+}
+.cardEvenements:hover{
+    box-shadow: 0 0 5px 0 var(--color-text-sec);
+    -webkit-box-shadow: 0 0 5px 0 var(--color-text-sec);
+    -moz-box-shadow: 0 0 5px 0 var(--color-text-sec);
 }
 
-.btnAssos a:hover{
-    color: var(--color-text-sec);
+.cardEvenements .cardDetailsDate{
+    font-size: .9rem;
+    color: #9C7736;
+    margin: 10px 0;
 }
 
-.bbtnAssos a:last-child{
-    margin-top: 25px;
+.card-title{
+    font-family: var(--typo-titre);
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 1.5rem;
 }
-
 
 /* AFFICHAGE MOBILE */
 @media screen and (max-width:1200px) {
