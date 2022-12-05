@@ -225,11 +225,9 @@ body{
     }
 
     /* BTN BURGER */
-    .btnBurger{
-    }
-
     .btnBurger.active .lineBurger {
         z-index: 10;
+        background: #fff;
     }
         
     .btnBurger.active .lineBurger::before {
