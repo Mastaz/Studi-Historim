@@ -11,10 +11,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
 
-    /* DEBUG CSS */
-    /* background: rgba(255, 0, 0, .1);
-    box-shadow: 0 0 0 1px red; */
+.debug{
+    background: rgba(255, 0, 0, .1);
+    box-shadow: 0 0 0 1px red;
 }
 
 body{
